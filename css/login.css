@@ -1,0 +1,390 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+    background-color: #FFDFA0;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding: 100px 0;
+}
+
+.section-title{
+    margin-bottom: 30px;
+}
+
+.section-title h2{
+    position: relative;
+    text-align: center;
+    color: rgb(255, 254, 254);
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.section-title h2:hover{
+    background-color: sandybrown;
+}
+
+/* HEADER */
+
+header{
+    background: rgb(253, 253, 253);
+    border-bottom: 1px solid rgba (250,250,250, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    border-radius: 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 128px;
+    padding: 38px;
+}
+.nav_links{
+    display: flex;
+}
+
+.nav_links li a{
+    margin-left: 20px; 
+    color: #0a0a0a;
+    padding: 5px 15px;
+    border-radius: 35px;
+    transition:  all .5s ease-in-out;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav_links li a:hover{
+    background: sandybrown;
+}
+
+
+.logo h2 a{
+    color: #B97333;
+    font-family: "Oswald", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 1px;
+}
+
+.logo h2 a span:first-child {
+    color: rgb(5, 5, 5); 
+  }
+
+  /* SEARCH BAR */
+  .search-bar {
+    display: flex;
+    position: absolute; /* Sayfadan bağımsız konumlandırın */
+    top: 55%; /* Dikey olarak tam ortaya */
+    left: 50%; /* Yatay olarak tam ortaya */
+    transform: translate(-50%, -50%); /* Ortalamayı tarayıcı uyumluluğu için */
+    align-items: center; /* Dikey olarak ortalamayı */
+    justify-content: space-between; /* Düğmeyi sağa yerleştirin */
+}
+
+.search-input {
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    flex-grow: 0; /* Arama çubuğunun alanı genişlet */
+    margin-right: 10px;
+    background-color: #E3D8C8;
+    width: 400px; /* Arama çubuğunun genişliği */
+    height: 50px;
+    flex-grow: 1;
+}
+
+.search-btn {
+    padding: 8px px;
+    background-color: #e99a25; /* Düğme rengi */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 60px; /* Arama çubuğunun genişliği */
+    height: 60px;
+    padding: 0; /* Buton kenar boşluğunu kaldırın */
+    background: none; /* Buton arka planını kaldırın */
+    border: none; /* Buton kenarlığını kaldırın */
+    cursor: pointer;
+}
+
+.search-btn img {
+    width: 45px; /* Logo genişliği */
+    height: 45px; /* Logo yüksekliği */
+    vertical-align: middle; /* Logoyu dikey olarak hizalayın */
+}
+
+.ink-journey-logo {
+    margin-top: 50px; /* Logo ve arama kutusu arasındaki mesafe */
+    width: 470px; /* Logo genişliği */
+    height: auto; /* Logo yüksekliği orantılı olarak ayarlanır */
+    display: block; /* Logoyu satır içi değil blok öğe olarak konumlandırır */
+    margin-left: 65px; /* Logoyu yatay olarak ortalar */
+    margin-right: 10px; /* Logoyu yatay olarak ortalar */
+    flex-grow: 0;
+    position: absolute;
+    bottom: 200px;
+}
+
+.search-container {
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    flex-grow: 1; /* Arama çubuğunun alanı genişlet */
+    margin-right: 10px;
+    background-color: #E3D8C8;
+    width: 600px; /* Arama çubuğunun genişliği */
+    height: 60px;
+    flex-grow: 1;
+}
+/* Pattern */
+.pattern {
+    position: absolute;
+    bottom: -30px; /* Topun alt kenarından sayfanın altına olan mesafe */
+    right: -200px; /* Topun sağ kenarından sayfanın sağına olan mesafe */
+    width: 410px; /* Topun çapı */
+    height: 392px; /* Topun çapı */
+    border-radius: 50%;
+    background-color: #FBD1AB; 
+    z-index: 4;
+}
+
+.down-header {
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.down-header img {
+    width: 1051px;
+    height: 52px;
+    margin-right: 10px;
+}
+
+/* Centering the login container */
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1350px;
+    height: 826px;
+    background-color: #FBD1AB;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styling the login form */
+.login-container form {
+    background: none;
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    width: 600px; /* Width of the form */
+    height: 745px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 250px;
+  }
+
+  .login-container label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .login-container input[type="email"],
+  .login-container input[type="password"] {
+    display: flex;
+    justify-content: space-between; 
+    width: 483px;
+    height: 67px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+  
+  /* Centering the input fields horizontally */
+.login-container .input-fields {
+    justify-content: space-between; /* Space inputs evenly */
+  }
+  
+  /* Styling the button group */
+  .login-container .button-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between; 
+    width: 350px;
+    height: 55px; 
+    margin-top: 70px; /* Add some space above the buttons */
+    margin-left: 60px;
+  }
+  
+  /* Styling the login button */
+  .login-container .login-btn {
+    font-family: "Oswald", sans-serif;
+    font-size: 17px;
+    background-color: #fefeff; /* Blue background color */
+    color: #030303; /* White text color */
+    border: none; /* Remove default button border */
+    padding: 15px 20px; /* Add some padding for visual comfort */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Indicate clickable area */
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  /* Hover effect for the login button */
+  .login-container .login-btn:hover {
+    background-color: #d3ab27; /* Darker blue on hover */
+  }
+  
+  /* Styling the signup button */
+  .login-container .signup-btn {
+    font-family: "Oswald", sans-serif;
+    font-size: 17px;
+    background-color: #ffffff; /* Green background color */
+    color: #000000; /* White text color */
+    border: none; /* Remove default button border */
+    padding: 15px 20px; /* Add some padding for visual comfort */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Indicate clickable area */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    margin-bottom: 30px;
+  }
+  
+  /* Hover effect for the signup button */
+  .login-container .signup-btn:hover {
+    background-color: #d3ab27; /* Darker green on hover */
+  }
+
+    /* Styling the signup button */
+  .login-container .facebook-btn {
+    font-family: "Oswald", sans-serif;
+    font-size: 17px;
+    background-color: #ffffff; /* Green background color */
+    color: #000000; /* White text color */
+    border: none; /* Remove default button border */
+    padding: 15px 20px; /* Add some padding for visual comfort */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Indicate clickable area */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    margin-bottom: 15px;
+  }
+  
+  /* Hover effect for the signup button */
+  .login-container .facebook-btn:hover {
+    background-color: #2b52d4; /* Darker green on hover */
+  }
+
+  .login-container .google-btn {
+    font-family: "Oswald", sans-serif;
+    font-size: 17px;
+    background-color: #ffffff; /* Green background color */
+    color: #000000; /* White text color */
+    border: none; /* Remove default button border */
+    padding: 15px 20px; /* Add some padding for visual comfort */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Indicate clickable area */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  /* Hover effect for the signup button */
+  .login-container .google-btn:hover {
+    background-color: #ffffff; /* Darker green on hover */
+  }
+
+/* Styling the checkbox group */
+.login-container .checkbox-group {
+    position: absolute;
+    margin-top: 16%;
+    display: flex; /* Arrange elements horizontally */
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center; /* Align vertically */
+  }
+  
+  /* Styling the checkbox */
+  .login-container .checkbox-group input[type="checkbox"] {
+    position: absolute;
+    transform: scale(1.5);
+   /* Add some space between the checkbox and label */
+  }
+  
+  /* Styling the label for the checkbox */
+  .login-container .checkbox-group label {
+    margin-top: 5px;
+    margin-left: 25px;
+    font-family: "Oswald", sans-serif;
+    font-size: 17px; /* Adjust font size as needed */
+    cursor: pointer; /* Indicate clickable area */
+  }
+  
+  /* Styling the "Forgot Password" button */
+  .login-container .checkbox-group button {
+    background-color: transparent; /* Remove default button background */
+    border: none; /* Remove default button border */
+    font-size: 18px; /* Adjust font size as needed */
+    color: #000000; /* Blue text color */
+    cursor: pointer; /* Indicate clickable area */
+    text-decoration: none; /* Remove underline from text */
+    padding: 0; /* Remove default button padding */
+    margin-left: 285px; /* Remove default margin */
+    font-family: "Oswald", sans-serif;
+    font-size: 17px;
+  }
+
+  .login-container .inklogo  {
+    position: absolute;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-right: 20%;
+    margin-left: 15%;
+    width: 200px;
+    height: auto;
+    flex-grow: 0;
+    bottom: 0;
+  } 
+
+.facebook-btn img {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.google-btn img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
